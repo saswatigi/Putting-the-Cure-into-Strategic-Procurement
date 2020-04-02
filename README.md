@@ -11,7 +11,7 @@ As a former management consultant, a client asked for a detailed spend analysis 
 * EDA Jupyter Notebook   
 * Modelling Jupyter Notebook  
 * Results Jupyter Notebook  
-* [Video presentation](http://www.youtube.com/watch?v=XC6w5jzgaEU&t=2s)
+* [Video Presentation](http://www.youtube.com/watch?v=XC6w5jzgaEU&t=2s)
 
 ### Objective
 To achieve the highest accuracy score when predicting spend categories. The Segment level of the United Nations Standard Product & Sevices Code was used as the target.
