@@ -13,6 +13,9 @@ As a former management consultant, a client asked for a detailed spend analysis 
 * Results Jupyter Notebook  
 * [Video presentation](http://www.youtube.com/watch?v=XC6w5jzgaEU&t=2s)
 
+### Objective
+To achieve the highest accuracy score when predicting spend categories. The Segment level of the United Nations Standard Product & Sevices Code was used as the target.
+
 ### Cleaning process and feature engineering 
 Delete rows with:  
 Supplier Name as 'Unknown'  
@@ -22,9 +25,9 @@ Segment as blank
 Bottom 20% of categories by line items placed into either Other Services or Other Goods  
 
 ### Modelling brief overview
-First, the was split data into 80% for training and 20% for test.
-I then developed 3 separate TF-IDF NLP models on Supplier Name, Item Name and Item Description.  
-After merging the matrices and fitted it to a weighted soft voting ensemble consisting of OnevsRest Logistic Regression, Extra Randomized Forest and LinearSVC models.
+The cleaned dataset was split data into 80% for training and 20% for test.
+3 separate TF-IDF NLP models on Supplier Name, Item Name and Item Description where created.  
+After merging the matrices, the new sparse matrix was fitted to a weighted soft voting ensemble consisting of OnevsRest Logistic(4) Regression, ExtraTrees(3) and LinearSVC(0.5) models.
 
 ### Results
 This modelling approach resulted in a 77% accuracy test score, which correctly classified 92% of total spend.
