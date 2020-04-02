@@ -24,7 +24,7 @@ To achieve the highest accuracy score when predicting spend categories. The Segm
 Delete rows with:  
 * Supplier Name as 'Unknown'  
 * Total Price <= $0  
-* Item Name as blank of 'confidential'  
+* Item Name as blank or 'confidential'  
 * Segment as blank  
 
 Bottom 20% of categories by line item frequency where placed into either Other Services or Other Goods.  
