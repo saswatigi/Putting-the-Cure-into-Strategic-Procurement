@@ -1,6 +1,6 @@
 ## Putting the Cure into Strategic Procurement
 
-Natural Language Processing soft weighted voting ensemble multi-class classifier to predict spend categories using [Goverment of California's 2012-2015 Purchase Orders ](https://data.ca.gov/dataset/purchase-order-data/resource/bb82edc5-9c78-44e2-8947-68ece26197c5) 2012-2015 purchase order dataset
+Natural Language Processing soft weighted voting ensemble multi-class classifier to predict spend categories using [Goverment of California's 2012-2015 Purchase Orders ](https://data.ca.gov/dataset/purchase-order-data/resource/bb82edc5-9c78-44e2-8947-68ece26197c5) 
 
 ### Table of contents
 * Final Report  
