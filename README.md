@@ -20,6 +20,7 @@ Why conduct a spend analysis?
 To achieve the highest accuracy score when predicting spend categories. The Segment level of the United Nations Standard Products & Sevices Code (UNSPSC) was used as the target.
 
 UNSPSC
+
 ![](images/UNSPSC.PNG)
 
 ### Cleaning process and feature engineering 
@@ -31,6 +32,7 @@ Segment as blank
 Bottom 20% of categories by line items placed into either Other Services or Other Goods  
 
 Cleaned dataset description
+
 ![](images/data.PNG)
 
 ### Modelling brief overview
@@ -38,7 +40,6 @@ The cleaned dataset was split data into 80% for training and 20% for test.
 3 separate TF-IDF NLP models on Supplier Name, Item Name and Item Description where created.  
 After merging the matrices, the new sparse matrix was fitted to a weighted soft voting ensemble consisting of OnevsRest Logistic(4) Regression, ExtraTrees(3) and LinearSVC(0.5) models.
 
-Modelling process
 ![](images/modelling.PNG)
 
 ### Results
