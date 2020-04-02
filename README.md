@@ -20,17 +20,18 @@ To achieve the highest accuracy score when predicting spend categories. The Segm
 
 ![](images/UNSPSC.PNG)
 
-### Cleaning process and feature engineering 
+### Data Cleaning Process and Feature engineering 
 Delete rows with:  
-Supplier Name as 'Unknown'  
-Total Price <= $0  
-Item Name as blank of 'confidential'  
-Segment as blank  
-Bottom 20% of categories by line items placed into either Other Services or Other Goods  
+* Supplier Name as 'Unknown'  
+* Total Price <= $0  
+* Item Name as blank of 'confidential'  
+* Segment as blank  
+
+Bottom 20% of categories by line item frequency where placed into either Other Services or Other Goods.  
 
 ![](images/data.PNG)
 
-### Modelling brief overview
+### Modelling Overview
 The cleaned dataset was split data into 80% for training and 20% for test.
 3 separate TF-IDF NLP models on Supplier Name, Item Name and Item Description where created.  
 After merging the matrices, the new sparse matrix was fitted to a weighted soft voting ensemble consisting of OnevsRest Logistic(4) Regression, ExtraTrees(3) and LinearSVC(0.5) models.
@@ -43,6 +44,6 @@ This modelling approach resulted in a 77% accuracy test score, which correctly c
 ![](images/results.PNG)
 
 ### Conclusion
-The model exceeded my expectations on accuracy for 26 categories with 77%. However, it’s applications to corporate data may be limited as a result of differences between the public sector and corperate spending focuses. Further analysis include exploring a meta-model incorporating quantity and price.
+The model exceeded my expectations on accuracy for 26 categories with 77%. However, it’s applications to corporate data may be limited as a result of the differences between the public sector and corperate spending focuses. Further analysis includes exploring a meta-model incorporating quantity and price.
 
 ![](images/conclusion.PNG)
