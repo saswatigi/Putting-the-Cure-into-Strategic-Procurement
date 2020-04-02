@@ -13,13 +13,10 @@ Natural Language Processing soft weighted voting ensemble multi-class classifier
 ### Motivation
 As a former management consultant, a client asked for a detailed spend analysis of their purchase orders. This allowed me to experience first hand how labour intensive and frustrating that can be when done manually in excel. However, this experience also reinforced the business importance of timely and accurate spend analysis to identify cost saving opportunities and ultimately facilitate strategic procurement decision making and sourcing. 
 
-Why conduct a spend analysis?
 ![](images/spend_cube.PNG)
 
 ### Objective
 To achieve the highest accuracy score when predicting spend categories. The Segment level of the United Nations Standard Products & Sevices Code (UNSPSC) was used as the target.
-
-UNSPSC
 
 ![](images/UNSPSC.PNG)
 
@@ -30,8 +27,6 @@ Total Price <= $0
 Item Name as blank of 'confidential'  
 Segment as blank  
 Bottom 20% of categories by line items placed into either Other Services or Other Goods  
-
-Cleaned dataset description
 
 ![](images/data.PNG)
 
